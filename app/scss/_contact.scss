@@ -1,0 +1,38 @@
+.contact {
+	height: 100%;
+	padding-top: 25vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: 
+	linear-gradient(
+		to right,
+		rgba($primary-color, 2),
+		rgba($primary-color, 0.2)
+	),
+	url('../images/citycover.jpg') center top;
+	background-size: cover;
+
+	h2 {
+		font-size: 3rem;
+		margin-bottom: 50px;
+	}
+
+
+	i {
+		margin-bottom: 1rem;
+	}
+	&__list {
+		display: grid;
+		text-align: center;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		font-size: 1.5rem;
+	}
+
+	.social-icons {
+		position: initial;
+		margin-top: 2rem;
+	}
+}

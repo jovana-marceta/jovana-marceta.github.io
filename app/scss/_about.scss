@@ -1,0 +1,61 @@
+.about {
+	padding-bottom: 2rem;
+
+	&-img {
+		height: 50vh;
+		width: 100%;
+		background: 
+		linear-gradient(
+			to right,
+			rgba($primary-color, 0.8),
+			rgba($primary-color, 0.3)
+		),
+		url('../images/portret.jpg') center top;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+
+		p {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&-bio {
+		width: 80%;
+		text-align: center;
+
+		.text-secondary {
+			padding-bottom: 1rem;
+		}
+	}
+
+	.education {
+		width: 60vw;
+		margin: 3rem auto 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+
+		&_school {
+			background: lighten($primary-color, 10%);
+			padding: 1rem;
+			border-bottom: 5px solid $secondary-color;
+
+			h2, h3 {
+				margin: 0.5rem 0;
+			}
+
+			h5 {
+				margin: 0.3rem 0;
+			}
+		}
+	}
+
+	.social-icons {
+		display: flex;
+		flex-direction: row;
+	}
+
+}

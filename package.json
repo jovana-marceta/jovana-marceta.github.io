@@ -9,7 +9,7 @@
   "author": "Jovana Marceta",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.10",
+    "browser-sync": "^2.27.5",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cache": "^1.1.3",

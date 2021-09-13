@@ -1,3 +1,9 @@
+@include media-sm {
+	.projects__item {
+		height: 50vw;
+	}
+}
+
 @include media-md {
     .menu-btn {
         visibility: hidden;

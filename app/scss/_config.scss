@@ -20,6 +20,12 @@ $font-family: 'Titillium Web', sans-serif;
     }
 }
 
+@mixin media-sm {
+    @media screen and (max-width: 700px) {
+        @content;
+    }
+}
+
 @mixin media-md {
     @media screen and (min-width: 768px) {
         @content;

@@ -2,93 +2,109 @@
 	padding-bottom: 2rem;
 
 	&-img {
-	height: 20vh;
-	width: 100%;
-	background: 
-		linear-gradient(
-		to right,
-		rgba($primary-color, 0.9),
-		rgba($primary-color, 0.3)
-		),
-	url('../images/citycover.jpg') center top;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
+		height: 20vh;
+		width: 100%;
+		background: 
+			linear-gradient(
+			to right,
+			rgba($primary-color, 0.9),
+			rgba($primary-color, 0.3)
+			),
+		url('../images/citycover.jpg') center top;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
 
-	.text-secondary {
-		font-size: 2rem;
-		margin-bottom: 2rem;
-	}
+		.text-secondary {
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
 	}
 
 	&__items {
-	width: 60vw;
-	margin: 2rem auto 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 2rem;
+		width: 60vw;
+		margin: 2rem auto 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
 	}
 
 	&__item {
-	position: relative;
-	border-bottom: 5px solid $secondary-color;
-	overflow: hidden;
-	cursor: pointer;
+		position: relative;
+		border-bottom: 5px solid $secondary-color;
+		overflow: hidden;
+		cursor: pointer;
 
-	img {
-		width: 100%;
-	}
+		// izmena
+		height: 300px;
 
-	&::after {
-		content: '';
-		position: absolute;
-		top: 100%;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		background: $secondary-color;
-		opacity: 0;
-		@include transition-ease;
-	}
+		&-bg {
+			width: 100%;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100%;
+			left: 0;
+			top: 0
+		}
 
-	&:hover {
+		img {
+			width: 100%;
+		}
+
 		&::after {
-		top: 0;
-		opacity: 0.9;
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: $secondary-color;
+			opacity: 0;
+			@include transition-ease;
 		}
-		.projects__btn {
-		opacity: 1;
+
+		&:hover {
+			&::after {
+				top: 0;
+				opacity: 0.9;
+			}
+			.projects__btn {
+				opacity: 1;
+			}
 		}
-	}
 	}
 
 	&__btns {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	text-align: center;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		text-align: center;
 	}
 
 	&__btn {
-	opacity: 0;
-	color: set-text-color($secondary-color);
-	@include transition-ease;
+		opacity: 0;
+		color: set-text-color($secondary-color);
+		@include transition-ease;
 
-	&:hover {
-		color: set-text-color(set-text-color($secondary-color));
-	}
+		&:hover {
+			color: set-text-color(set-text-color($secondary-color));
+		}
 	}
 
 	.social-icons {
-	display: flex;
-	flex-direction: row;
+		display: flex;
+		flex-direction: row;
 	}
 
 }
+
+
+

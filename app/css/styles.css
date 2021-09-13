@@ -176,7 +176,16 @@
     position: relative;
     border-bottom: 5px solid #ffff00;
     overflow: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    height: 300px; }
+    .projects__item-bg {
+      width: 100%;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      left: 0;
+      top: 0; }
     .projects__item img {
       width: 100%; }
     .projects__item::after {
@@ -237,6 +246,10 @@
   .contact .social-icons {
     position: initial;
     margin-top: 2rem; }
+
+@media screen and (max-width: 700px) {
+  .projects__item {
+    height: 50vw; } }
 
 @media screen and (min-width: 768px) {
   .menu-btn {
